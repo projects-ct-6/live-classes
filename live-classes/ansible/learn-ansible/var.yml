@@ -22,5 +22,5 @@
 
     - name: Task variable
       ansible.builtin.debug:
-        msg: URL_TASK - {{ URL_TASK }}
+        msg: {{ URL_PLAY }}
               
