@@ -1,0 +1,37 @@
+a: 10
+b:
+ - 10:
+    
+
+ - 20:
+     name: 
+     school
+
+ansible -i 18.206.253.68, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ping
+ansible -i 18.206.253.68, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -m dnf
+
+Ansible-Playbook
+abc.yaml
+
+---
+  hosts: all
+- name: Run a sample playbook
+  tasks:
+   - name: Execute command
+     command: apt-get install nginx 
+
+   - name: Execute command
+     command: apt-get install nginx 
+
+   - name: Execute command
+     command: apt-get install nginx 
+
+- name: Run a sample playbook
+  tasks:
+   - name: Execute command
+     command: apt-get install nginx 
+
+   - name: Install the latest version of Apache
+     ansible.builtin.dnf:
+        name: httpd
+        state: latest            
