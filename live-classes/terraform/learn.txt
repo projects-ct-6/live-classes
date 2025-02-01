@@ -22,3 +22,5 @@ terraform {
     }
   }
 }
+
+# Terraform is a folder specific tool.
