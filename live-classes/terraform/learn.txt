@@ -1,0 +1,24 @@
+HCL --> HasiCorp Configuration Language
+
+Block and Keyword based Language
+
+provider "aws" {
+  # Configuration options
+}
+
+resource "aws_s3_bucket" "abc" {
+    .......
+}
+
+resource "aws_s3_bucket" "xyz" {
+    .......
+}
+
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.84.0"
+    }
+  }
+}
