@@ -42,3 +42,9 @@ output "y_1" {
 output "z_x" {
     value = var.z_map["x"]
 } 
+
+variable "env" {}
+
+output "env-name" {
+    value = "Environment Name - ${var.env}"
+}
