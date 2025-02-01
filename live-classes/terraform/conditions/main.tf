@@ -13,3 +13,5 @@ resource "aws_instance" "test" {
 variable "instance_type" {}
 
 # variable "create_instance" {}
+
+#make this ami dynamic with the data block
