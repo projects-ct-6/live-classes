@@ -1,0 +1,11 @@
+Initialize the SWARM Learder
+
+docker swarm init --advertise-addr 44.203.168.15 [ This will be my master and all swarms must connect to it]
+
+docker swarm join --token SWMTKN-1-40fi1site8k49qhn9l8bjwy1uk3blz0n3cwswv0vlndnfxe7uz-3qy29oz9ljcixysdjonixju1z 44.203.168.15:2377
+
+docker swarm leave --force
+
+docker service create --name <name-of-service> --replicas <number-of-replicas> --publish <port-mapping> <image-name>
+
+docker service create --name myfirstswarm-app --replicas 3 --publish 8001:80 nginx
